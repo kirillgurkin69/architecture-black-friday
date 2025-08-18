@@ -14,6 +14,19 @@ docker compose up -d
 ./scripts/mongo-init.sh
 ```
 
+Останавливаем сервисы:
+
+```bash
+docker-compose down -v
+```
+
+После внесения изменений рестартим:
+
+```bash
+docker-compose build
+docker-compose up -d
+```
+
 ## Как проверить
 
 ### Если вы запускаете проект на локальной машине
