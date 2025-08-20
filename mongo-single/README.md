@@ -2,38 +2,36 @@
 
 ## Как запустить
 
-Перейти в папку sharding-repl-cache
-
-```
-cd ./sharding-repl-cache
-```
-
-Запускаем сборку
+Запускаем mongodb и приложение
 
 ```shell
-docker compose config -q
-docker compose build
 docker compose up -d
+```
+
+Заполняем mongodb данными
+
+```shell
+./scripts/mongo-init.sh
 ```
 
 Останавливаем сервисы:
 
 ```bash
-docker compose down -v
+docker-compose down -v
 ```
 
 После внесения изменений рестартим:
 
 ```bash
-docker compose build
-docker compose up -d
+docker-compose build
+docker-compose up -d
 ```
 
 ## Как проверить
 
 ### Если вы запускаете проект на локальной машине
 
-Откройте в браузере doc
+Откройте в браузере http://localhost:8080
 
 ### Если вы запускаете проект на предоставленной виртуальной машине
 

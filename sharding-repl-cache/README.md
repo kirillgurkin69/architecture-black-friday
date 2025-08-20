@@ -2,13 +2,7 @@
 
 ## Как запустить
 
-Перейти в папку sharding-repl-cache
-
-```
-cd ./sharding-repl-cache
-```
-
-Запускаем сборку
+Запускаем mongodb и приложение
 
 ```shell
 docker compose config -q
